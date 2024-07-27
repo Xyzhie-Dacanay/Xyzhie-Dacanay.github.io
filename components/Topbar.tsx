@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import navLinks from "../components/ui/Nav";
+import navLinks from "./ui/Nav";
 import ThemeToggle from "./ui/ThemeToggle";
 
 
