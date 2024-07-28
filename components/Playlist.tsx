@@ -7,7 +7,9 @@ export default function spotifyPlaylist() {
     <section className="flex flex-col xl:items-start justify-center w-full max-w-2xl mx-auto mb-14 sm:mb-16 pt-32 px-10  font-serif">
         <div className="">
             <h1 className="mb-4 text-3xl font-bold tracking-tight text-black sm:text-5xl dark:text-white">Playlists</h1>
-            <p className="w-full mb-4 text-gray-600 dark:text-gray-400">I can't be productive without music, so this page is one of my favorites on my website. Below are some of my top-played songs on Spotify—tracks that keep me in the zone.</p>
+            <p className="w-full mb-4 text-gray-600 dark:text-gray-400">
+            {`I can't be productive without music, so this page is one of my favorites on my website. Below are some of my top-played songs on Spotify—tracks that keep me in the zone.`}
+            </p>        
         </div>
 
 

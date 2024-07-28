@@ -10,7 +10,7 @@ const aboutPage = () => {
       <ul className="list-disc list-inside mt-2 text-gray-600 dark:text-zinc-400">
         <li className="mb-2"><strong>Acer Lenovo Aspire 3</strong></li>
         <li className="mb-2"><strong>Logitech G Pro</strong></li>
-        <Image src={device}/>
+        <Image src={device} alt="Machine"/>
       </ul>
 
       <h2 className="text-xl md:text-2xl  pt-10">Code Editor</h2>
