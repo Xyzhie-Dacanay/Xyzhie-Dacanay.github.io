@@ -1,7 +1,7 @@
 "use client";
 import Loading from '@/app/Loading'
 import { useState, useEffect } from 'react';
-export default function spotifyPlaylist() {
+export default function SpotifyPlaylist() {
 
     const [isLoading , setIsLoading] = useState(true);
 
