@@ -1,6 +1,21 @@
-
-
+"use client";
+import Loading from '@/app/Loading'
+import { useState, useEffect } from 'react';
 export default function spotifyPlaylist() {
+
+    const [isLoading , setIsLoading] = useState(true);
+
+    useEffect(() => {
+        // Simulate data fetching or initialization process
+        setTimeout(() => {
+          setIsLoading(false); // Set to false when content is ready
+        }, 2000); // Adjust timing as needed
+      }, []);
+    
+      if (isLoading) {
+        return <Loading />;
+      }
+
   return (
     <>
    
