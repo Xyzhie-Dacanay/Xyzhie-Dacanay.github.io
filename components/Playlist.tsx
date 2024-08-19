@@ -12,9 +12,6 @@ export default function SpotifyPlaylist() {
         }, 2000); // Adjust timing as needed
       }, []);
     
-      if (isLoading) {
-        return <Loading />;
-      }
 
   return (
     <>
@@ -31,13 +28,16 @@ export default function SpotifyPlaylist() {
         <div className="flex  justify-center py-10">
         <div className="flex-col">
             <h1 className="text-2xl text-gray-800 dark:text-zinc-100 font-serif py-1">Top Tracks</h1>
+            {isLoading ? <Loading/> : 
             <iframe
-                src="https://open.spotify.com/embed/playlist/2RhfksYfbPQWhkcZDKpyiw?utm_source=generator&theme=0"
-                height="352"
-                className="rounded-xl shadow-md md:w-100 "
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                loading="lazy"
-            ></iframe>
+              src="https://open.spotify.com/embed/playlist/2RhfksYfbPQWhkcZDKpyiw?utm_source=generator&theme=0"
+              height="352"
+              className="rounded-xl shadow-md md:w-100 "
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+        ></iframe>
+            }
+            
         </div>
 
         </div>
@@ -45,6 +45,7 @@ export default function SpotifyPlaylist() {
         <div className="flex justify-center py-10 ">
             <div className="flex-col">
                 <h1 className="text-2xl text-gray-800 dark:text-zinc-100 font-serif py-1">Random</h1>
+                {isLoading ? <Loading/> : 
                 <iframe
                     src="https://open.spotify.com/embed/playlist/04Obfauef65RhUSPkr3FOt?utm_source=generator"
                     height="352"
@@ -52,6 +53,8 @@ export default function SpotifyPlaylist() {
                     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                     loading="lazy"
                 ></iframe>
+                }
+
         </div>
 
     </div>

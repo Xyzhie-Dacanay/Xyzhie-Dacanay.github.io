@@ -1,6 +1,19 @@
+'use client'
 import device from "@/components/ui/device.jpg"
 import Image from "next/image"
+import Loading from "../Loading"
+import { useEffect, useState } from "react";
 const aboutPage = () => {
+
+  const [isLoading , setIsLoading] = useState(true);
+
+  useEffect(() => {
+      // Simulate data fetching or initialization process
+      setTimeout(() => {
+        setIsLoading(false); // Set to false when content is ready
+      }, 2000); // Adjust timing as needed
+    }, []);
+  
   return (
     <div className="flex flex-col xl:items-start justify-center w-full max-w-2xl mx-auto mb-14 sm:mb-16 pt-32 px-10  font-serif bg-gray-100 dark:bg-slate-900 dark:text-zinc-100">
     <div className="py-6 max-w-2xl">
@@ -10,7 +23,7 @@ const aboutPage = () => {
       <ul className="list-disc list-inside mt-2 text-gray-600 dark:text-zinc-400">
         <li className="mb-2"><strong>Acer Lenovo Aspire 3</strong></li>
         <li className="mb-2"><strong>Logitech G Pro</strong></li>
-        <Image src={device} alt="Machine"/>
+        {isLoading ? <Loading/> : <Image src={device} alt="Machine"/>}
       </ul>
 
       <h2 className="text-xl md:text-2xl  pt-10">Code Editor</h2>
