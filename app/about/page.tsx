@@ -3,7 +3,7 @@ import device from "@/components/ui/device.jpg"
 import Image from "next/image"
 import Loading from "../Loading"
 import { useEffect, useState } from "react";
-const aboutPage = () => {
+const AboutPage = () => {
 
   const [isLoading , setIsLoading] = useState(true);
 
@@ -28,7 +28,7 @@ const aboutPage = () => {
 
       <h2 className="text-xl md:text-2xl  pt-10">Code Editor</h2>
       <ul className="list-disc list-inside mt-2 text-gray-600 dark:text-zinc-400">
-        <li className="mb-2"><strong>VSCode</strong></li>
+        <li className="mb-2"><strong>Visual Studio Code</strong></li>
       </ul>
       
 
@@ -89,4 +89,4 @@ const aboutPage = () => {
   )
 }
 
-export default aboutPage
+export default AboutPage
