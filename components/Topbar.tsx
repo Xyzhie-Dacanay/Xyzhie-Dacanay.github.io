@@ -18,15 +18,15 @@ const Topbar = () => {
             <nav className=" fixed top-0 w-full bg-white/30 backdrop-blur-md  p-5  dark:bg-slate-900 dark:shadow-none ">
                 <div className="flex mx-6  xl:mx-44 justify-between p-2">
                     <div className="text-4xl">
-                        <h1 className="text-slate-900 dark:text-zinc-50 font-serif">RARC</h1>
+                        <h1 className="text-violet-900 dark:text-zinc-50 font-mono font-bold">DODI</h1>
                     </div>
-                    <ol className="flex space-x-6 text-2xl font-serif">
+                    <ol className="flex space-x-6 text-lg font-mono">
                         {links.map((link, index) =>
                             <li className="hidden md:block" key={index}>
-                                <Link className={`${link.href === currentPath ? 'text-teal-300 underline underline-offset-2 dark:text-teal-300' : 'text-zinc-800 dark:text-zinc-100'} `} href={link.href}>{link.label}</Link>
+                                <Link className={`${link.href === currentPath ? 'text-violet-800 underline underline-offset-2 dark:text-violet-800' : 'text-violet-800 dark:text-violet-100'} `} href={link.href}>{link.label}</Link>
                             </li>
                         )}
-                        <div className="-mt-1"><ThemeToggle /></div>
+                        <div className="-mt-3"><ThemeToggle /></div>
                     </ol>
                 </div>
             </nav>

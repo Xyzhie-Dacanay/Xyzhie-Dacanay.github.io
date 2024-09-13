@@ -8,9 +8,9 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Renz Cruz - Software Engineer",
+  title: "Xyzhie Dacanay - Software Engineer",
   description: "",
-  icons: '@/components/ui/device.jpg'
+  icons: '@/compo nents/ui/device.jpg'
 };
 
 export default function RootLayout({
@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-zinc-100 dark:bg-slate-900 duration-300 ease-in-out`}>
+      <body className={`${inter.className} bg-violet- dark:bg-slate-900 duration-300 ease-in-out`}>
         <Topbar />
         <SideBar />
         {children}

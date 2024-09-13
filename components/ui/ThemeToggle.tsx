@@ -37,7 +37,7 @@ const ThemeToggle = () => {
 
     return (
         <div 
-            className="rounded-full p-2 bg-slate-300 dark:bg-slate-700 text-4xl text-gray-700 dark:text-slate-200 hover:text-orange-100 dark:hover:text-slate-900 cursor-pointer" 
+            className="rounded-full p-2 bg-violet-100 dark:bg-slate-500 text-4xl text-gray-700 dark:text-slate-200 hover:text-violet-400 dark:hover:text-slate-700 cursor-pointer" 
             onClick={handleToggle}>
             {dark ? <CiDark /> : <AiOutlineSun />}
         </div>
