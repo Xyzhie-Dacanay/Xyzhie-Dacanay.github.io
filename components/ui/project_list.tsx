@@ -13,7 +13,7 @@ const project_list = () => {
 
     {
       Title: "EduGrade",
-      Description: "A stylish e-commerce frontend built with HTML and CSS. Built to share tech insights with a clean, modern design",
+      Description: "A modern educational management system designed for easy course and student management. With a clean, intuitive interface, it simplifies administrative tasks and enhances communication.,
     },
     
   ];
